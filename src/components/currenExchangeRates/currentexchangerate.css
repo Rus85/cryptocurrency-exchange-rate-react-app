@@ -1,0 +1,35 @@
+.current-exchange {
+    background-color: steelblue;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.coin-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.counter {
+    width: 180px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+    background-color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    margin: 0 auto;
+    color: black;
+  }
+
+  .coin-item {
+      margin-left: 50px;
+  }

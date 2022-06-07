@@ -1,0 +1,29 @@
+.header-block {
+    background-color: steelblue;
+    border-radius: 5px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    max-width: 1000px;
+    min-height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.menu-item {
+    font-size: 25px;
+    padding-top: 3px;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-item-link:hover {
+    color: blueviolet;
+}
