@@ -1,6 +1,6 @@
-## Marvel comics app on React
-### В приложение использовано API: [https://developer.marvel.com/](https://developer.marvel.com/)
-### Готовое приложение: [https://marvel-comics-app-react.herokuapp.com/](https://marvel-comics-app-react.herokuapp.com/)
+## Курс криптовалют
+## Выполнено в качестве первого тестового задания
+### В приложение использовано API: [https://www.coingecko.com/ru/api)](https://www.coingecko.com/ru/api)
 ## Установка зависимостей 
 ### `npm i`
 ## Запуск
