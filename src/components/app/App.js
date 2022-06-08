@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import LinearChartContainer from '../charts/linearChart/LinearChartContainer';
 import Breifcase from '../breifcase/Breifcase';
 import './app.css'
+import MainPage from '../pages/MainPage';
 
 
 
@@ -13,7 +14,8 @@ const App = () => {
                 <Header />
                 <main>
                     <Routes>
-                        <Route exact path='/cryptocurrency-exchange-rate-react-app' element={<LinearChartContainer />} />
+                        <Route path='/cryptocurrency-exchange-rate-react-app' element={<MainPage />} />
+                        <Route path='/chart' element={<LinearChartContainer />} />
                         <Route path='/breifcase' element={<Breifcase />} />
                     </Routes>
                 </main>
