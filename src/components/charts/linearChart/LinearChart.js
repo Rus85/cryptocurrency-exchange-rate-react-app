@@ -48,7 +48,7 @@ const Chart = ({ data }) => {
             },
             title: {
                 display: true,
-                text: 'График изменения курса Bitcoin и Ethereum за последние 14 дней',
+                text: 'График изменения курса Bit и Eth за последние 14 дней',
             },
         },
     }
