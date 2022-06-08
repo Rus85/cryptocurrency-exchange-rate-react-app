@@ -13,7 +13,7 @@ const App = () => {
                 <Header />
                 <main>
                     <Routes>
-                        <Route path='/' element={<LinearChartContainer />} />
+                        <Route exact path='/cryptocurrency-exchange-rate-react-app' element={<LinearChartContainer />} />
                         <Route path='/breifcase' element={<Breifcase />} />
                     </Routes>
                 </main>
