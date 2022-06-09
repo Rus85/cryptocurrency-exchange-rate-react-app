@@ -9,7 +9,7 @@ const Header = () => {
                     <li className='menu-item'>
                         <NavLink className='menu-item-link' end
                         style={({ isActive }) => ({ color: isActive ? '#fff' : '#0000CD' })}
-                        to='/'>Главная</NavLink>
+                        to='/chart'>Главная</NavLink>
                     </li>
                     <li className='menu-item'>
                         <NavLink className='menu-item-link' end

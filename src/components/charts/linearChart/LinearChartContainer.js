@@ -1,5 +1,5 @@
 import useQueryPromiseAll from "../../../apiComponents/useQueryPromiseAll"
-import СurrentExchangeRate from '../../currenExchangeRates/СurrentExchangeRate'
+import СurrentExchangeRate from '../../currentExchangeRates/СurrentExchangeRate'
 import Chart from "./LinearChart"
 
 
