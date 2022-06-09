@@ -14,8 +14,7 @@ const App = () => {
                 <Header />
                 <main>
                     <Routes>
-                        <Route path='/' element={<MainPage />} />
-                        <Route path='/chart' element={<LinearChartContainer/>}/>
+                        <Route path='/' element={<LinearChartContainer />} />
                         <Route path='/breifcase' element={<Breifcase />} />
                     </Routes>
                 </main>
