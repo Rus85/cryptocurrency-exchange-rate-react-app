@@ -8,13 +8,12 @@ const Header = () => {
                 <ul className='menu'>
                     <li className='menu-item'>
                         <NavLink className='menu-item-link' end
-                        style={({ isActive }) => ({ color: isActive ? '#fff' : '#0000CD' })}
-                        to='/'>Главная</NavLink>
+                            to='/'>Главная</NavLink>
                     </li>
                     <li className='menu-item'>
                         <NavLink className='menu-item-link' end
-                        style={({ isActive }) => ({ color: isActive ? '#fff' : '#0000CD' })}
-                        to='/breifcase'>Личный кабинет</NavLink>
+                            style={({ isActive }) => ({ color: isActive ? '#fff' : '#0000CD' })}
+                            to='/breifcase'>Личный кабинет</NavLink>
                     </li>
                 </ul>
             </nav>
