@@ -1,11 +1,11 @@
-import LinearChartContainer from '../charts/linearChart/LinearChartContainer'
+// import LinearChartContainer from '../charts/linearChart/LinearChartContainer'
 
-const MainPage = () => {
-    return (
-        <>
-            <LinearChartContainer />
-        </>
-    )
-}
+// const MainPage = () => {
+//     return (
+//         <>
+//             <LinearChartContainer />
+//         </>
+//     )
+// }
 
-export default MainPage
+// export default MainPage
