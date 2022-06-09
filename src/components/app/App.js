@@ -3,8 +3,6 @@ import Header from '../header/Header';
 import LinearChartContainer from '../charts/linearChart/LinearChartContainer';
 import Breifcase from '../breifcase/Breifcase';
 import './app.css'
-import MainPage from '../pages/MainPage';
-
 
 
 const App = () => {
