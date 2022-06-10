@@ -1,6 +1,6 @@
 ## Курс криптовалют
 ## Выполнено в качестве первого тестового задания
-## Готовое приложение [https://rus85.github.io/cryptocurrency-exchange-rate-react-app/](https://rus85.github.io/cryptocurrency-exchange-rate-react-app/)
+## Готовое приложение [https://crypto-wallet-react-app.web.app/](https://crypto-wallet-react-app.web.app/)
 ### В приложение использовано API: [https://www.coingecko.com/ru/api](https://www.coingecko.com/ru/api)
 ## Установка зависимостей 
 ### `npm i`
