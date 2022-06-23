@@ -4,6 +4,7 @@ import LinearChartContainer from '../charts/linearChart/LinearChartContainer';
 import Breifcase from '../breifcase/Breifcase';
 // import MainPage from '../pages/MainPage';
 import './app.css'
+import AuthForm from '../auth/AuthForm';
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
         <Router>
             <div className="app">
                 <Header />
+                <AuthForm/>
                 <main>
                     <Routes>
                         <Route path='/' element={<LinearChartContainer />} />
