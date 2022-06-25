@@ -1,22 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import './form.css'
-import axios from 'axios'
 
-
-const AuthForm = () => {
-
-    // async function signInHandler(authData) {
-      
-    //     const response = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAmWKRtnIdSgO7HhmrSTG4H6EpkrcphvYc', authData)
-    //     console.log((JSON.stringify(response.data, null, 2)))
-    // }
-   
-    async function signUpHandler(regData) {
-      
-        const response = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAmWKRtnIdSgO7HhmrSTG4H6EpkrcphvYc', regData)
-        console.log((JSON.stringify(response.data, null, 2)))
-    }
+const GeneralForm = (props) => {
 
     return (
 
@@ -36,12 +22,12 @@ const AuthForm = () => {
                     .min(3, 'Минимум 3 символа')
             })}
 
-            onSubmit={values => console.log(signUpHandler(values))}
+            onSubmit={values => props.authApi(values)}
         >
 
             <div className="form-block">
                 <Form className="form">
-                    <h2>Зарегистрироваться</h2>
+                    <h2>{props.title}</h2>
                     <label htmlFor="email">Email</label>
                     <Field
                         id='email'
@@ -56,11 +42,11 @@ const AuthForm = () => {
                         type='password'
                     />
                     <ErrorMessage className='error' name='password' component='div' />
-                    <button type="submit">Регистрация</button>
+                    <button type="submit">{props.btnName}</button>
                 </Form>
             </div>
         </Formik>
     )
 }
 
-export default AuthForm
+export default GeneralForm
