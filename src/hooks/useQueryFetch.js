@@ -6,7 +6,7 @@ const initialState = {
   error: null,
 }
 
-function useQueryApp(url, skipStart = false) {
+function useQueryFetch(url, skipStart = false) {
   const [result, setResult] = useState(initialState)
 
   const setData = useCallback(
@@ -57,4 +57,4 @@ function useQueryApp(url, skipStart = false) {
   return { ...result, fetchData, setData }
 }
 
-export default useQueryApp
+export default useQueryFetch

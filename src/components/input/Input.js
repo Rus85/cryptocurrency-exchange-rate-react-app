@@ -20,9 +20,9 @@ const Input = ({ inputCallBack }) => {
     return (
         <div className='input-block'>
             <input ref={inputEl} placeholder='Введите значение' />
-            <div className='btn'>
-                <button onClick={() => onChangeHandler(true)}>+</button>
-                <button onClick={() => onChangeHandler(false)}>-</button>
+            <div className='btns'>
+               <button type="button" className="btn btn-outline-success" onClick={() => onChangeHandler(false)}>Удалить</button>
+                <button type="button" className="btn btn-outline-success" onClick={() => onChangeHandler(true)}>Добавить</button>
             </div>
         </div>
     )

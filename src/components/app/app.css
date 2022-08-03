@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
-    padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    font-family: 'Poppins', sans-serif;
+    /* padding: 0 calc(0px - (100vw - 100%)) 0 0; */
 }
 
 .app {
-    max-width: 1000px;
+    background: url('/src/assets/main_background.jpg');
+    background-size: cover;
+    background-position: center center;
     margin: 0 auto;
+    height: 100vh;
+    overflow-y: scroll;
 }

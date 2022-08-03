@@ -5,7 +5,7 @@ import './pieChart.css'
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 const PieChart = (props) => {
-    
+ 
     const data = {
         
         labels: ['Bitcoin', 'Ethereum'],
@@ -14,21 +14,22 @@ const PieChart = (props) => {
             label: '# of Votes',
             data: props.coins,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.5)',
-                'rgba(53, 162, 235, 0.5)'
+                'rgba(242, 169, 0)',
+                'rgba(201, 157, 102)'
             ],
             borderColor: [
-                'rgb(255, 99, 132)',
-                'rgb(53, 162, 235)'
+                '#fff',
+                '#fff'
             ],
-            borderWidth: 1,
+            // borderWidth: 1,
+            hoverOffset: 4
           },
         ],
       }
       
         return (
             <div className="pie-chart-block">
-                <Pie data={data}/>
+                <Pie data={data} />
             </div>
         ) 
 }

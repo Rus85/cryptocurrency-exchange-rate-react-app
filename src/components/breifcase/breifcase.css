@@ -1,5 +1,5 @@
 .breifcase-block {
-    background-color: steelblue;
+    background-color: #0072B5;
     padding: 50px;
     border-radius: 5px;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
@@ -16,7 +16,7 @@
 }
 
 .coin-block {
-  min-width: 300px;
+  width: 300px;
   min-height: 200px;
   background-color: #fff;
   margin: 10px auto 0 auto;
@@ -53,6 +53,7 @@
   padding: 40px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+  overflow: hidden;
 }
 
 .breifcase-sum-counter {

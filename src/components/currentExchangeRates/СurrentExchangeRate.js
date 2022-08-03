@@ -1,10 +1,15 @@
-import useQueryFetch from '../../apiComponents/useQueryFetch'
+import useQueryFetch from '../../hooks/useQueryFetch'
+import { CURRENT_EXCHANGE_COINS_RATE } from '../../urlConsts/urlConsts'
+import Spinner from '../spinner/Spinner'
 import './currentexchangerate.css'
+
 
 const СurrentExchangeRate = () => {
 
-    const { data } = useQueryFetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd')
+    const { data, loading, error } = useQueryFetch(CURRENT_EXCHANGE_COINS_RATE)
 
+    if (loading) return <Spinner />
+    if (error) return <Spinner text={'Загрузка данных с сервера...'}/>
     if (!data) return null
 
     const keys = [
@@ -19,7 +24,6 @@ const СurrentExchangeRate = () => {
     ]
 
     return (
-
         <div className='current-exchange'>
             <h1>Текущий курс криптовалют</h1>
             <div className='coin-boxes'>
@@ -33,7 +37,6 @@ const СurrentExchangeRate = () => {
                 }
             </div>
         </div>
-
     )
 }
 
