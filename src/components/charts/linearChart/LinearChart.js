@@ -42,12 +42,18 @@ const Chart = ({ data }) => {
     const dataEthereum = ethereum.prices.map(item => item[1])
     
     const colorCode = '#fff'
-    
+  
     const options = {
         responsive: true,
         plugins: {
             legend: {
                 position: 'top',
+                onHover: (event) => {
+                    event.native.target.style.cursor = 'pointer'
+                },
+                onLeave: (event) => {
+                    event.native.target.style.cursor = 'default'
+                }
             },
             title: {
                 display: true,

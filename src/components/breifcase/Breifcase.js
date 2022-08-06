@@ -25,7 +25,7 @@ const Breifcase = () => {
         if (isAuth) {
             navigate('/breifcase')
         } else {
-            navigate('/signup')
+            navigate('/signin')
         }
 
     }, [isAuth, navigate])

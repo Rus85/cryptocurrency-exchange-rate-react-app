@@ -38,6 +38,12 @@
   margin-bottom: 20px;
 }
 
+.coin-counter:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
 .breifcase-sum {
   margin-top: 30px;
 }

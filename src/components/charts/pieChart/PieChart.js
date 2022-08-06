@@ -26,10 +26,23 @@ const PieChart = (props) => {
           },
         ],
       }
+
+    const options = {
+      plugins: {
+        legend: {
+            position: 'top',
+            onHover: (event) => {
+                event.native.target.style.cursor = 'pointer'
+            },
+            onLeave: (event) => {
+                event.native.target.style.cursor = 'default'
+            }
+        }
+    }}  
       
         return (
             <div className="pie-chart-block">
-                <Pie data={data} />
+                <Pie data={data} options={options} />
             </div>
         ) 
 }
