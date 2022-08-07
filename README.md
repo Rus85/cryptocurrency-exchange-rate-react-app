@@ -10,6 +10,7 @@
 - Анимация: framer-motion. react-spinners
 - Обработка ошибок при авторизации
 - Обработка ошибок при запросах API coingecko
+- Все компоненты инкапсулированы
 ## Готовое приложение [https://crypto-wallet-react-app.web.app/](https://crypto-wallet-react-app.web.app/)
 ## В приложение использовано API: [https://www.coingecko.com/ru/api](https://www.coingecko.com/ru/api)
 ## Установка зависимостей 
