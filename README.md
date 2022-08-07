@@ -1,5 +1,5 @@
-## Курс криптовалют
-## Выполнено в качестве первого тестового задания
+## Курс криптовалют/кошелёк
+## Самостоятельно реализованный проект.
 ## Готовое приложение [https://crypto-wallet-react-app.web.app/](https://crypto-wallet-react-app.web.app/)
 ### В приложение использовано API: [https://www.coingecko.com/ru/api](https://www.coingecko.com/ru/api)
 ## Установка зависимостей 
