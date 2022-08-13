@@ -62,7 +62,7 @@ const Breifcase = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
             >
-                <h2>Текущий баланс криптовалют:</h2>
+                <h2>Текущий баланс криптовалют</h2>
                 <div className='breifcase-coins-block'>
                     <div className="btc-block">
                         <h2>BTC</h2>
@@ -80,7 +80,7 @@ const Breifcase = () => {
                     </div>
                 </div>
                 <div className="breifcase-sum">
-                    <h2>Общий баланс криптовалют в USD:</h2>
+                    <h2>Баланс криптовалют в USD</h2>
                     <div className="breifcase-sum-block">
                         <div className="breifcase-sum-counter">{new Intl.NumberFormat('ru-RU').format(sum.toFixed())} $</div>
                     </div>

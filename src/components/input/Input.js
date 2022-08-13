@@ -21,8 +21,12 @@ const Input = ({ inputCallBack }) => {
         <div className='input-block'>
             <input ref={inputEl} placeholder='Введите значение' />
             <div className='btns'>
-               <button type="button" className="btn btn-outline-success" onClick={() => onChangeHandler(false)}>Удалить</button>
-                <button type="button" className="btn btn-outline-success" onClick={() => onChangeHandler(true)}>Добавить</button>
+               <div>
+               <button type="button" className="btn btn-outline-success inputBtn" onClick={() => onChangeHandler(false)}>Удалить</button>
+               </div>
+                <div>
+                <button type="button" className="btn btn-outline-success inputBtn" onClick={() => onChangeHandler(true)}>Добавить</button>
+                </div>
             </div>
         </div>
     )

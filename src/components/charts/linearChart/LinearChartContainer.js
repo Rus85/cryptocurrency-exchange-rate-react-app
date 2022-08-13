@@ -4,6 +4,7 @@ import Chart from "./LinearChart"
 import { COINS_CHARTS_URLS_API } from "../../../urlConsts/urlConsts"
 import Spinner from "../../spinner/Spinner"
 import { motion } from 'framer-motion'
+import './linearChartContainer.css'
 
 
 const LinearChartContainer = () => {

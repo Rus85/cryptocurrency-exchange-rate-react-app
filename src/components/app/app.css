@@ -12,3 +12,29 @@
     height: 100vh;
     overflow-y: scroll;
 }
+
+@media (max-width: 991px) {
+    .app {
+        background: url('/src/assets/main_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .app {
+        background: url('/src/assets/main_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .app {
+        background: url('/src/assets/main_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

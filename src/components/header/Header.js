@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux'
 import { removeUser } from '../store/userSlice'
 import './header.css'
 
+
 const Header = () => {
 
     const { isAuth } = useAuth()
@@ -18,16 +19,17 @@ const Header = () => {
     }, [dispatch, navigate])
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <>
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <div className="container-fluid">
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
+                    <ul className="navbar-nav ">
+                        <li className="nav-item ">
                             <NavLink className='nav-link' end
                                 style={({ isActive }) => ({ color: isActive ? '#fff' : '#0d6efd' })}
                                 to='/'>Главная</NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item menu_item">
                             <NavLink className='nav-link' end
                                 style={({ isActive }) => ({ color: isActive ? '#fff' : '#0d6efd' })}
                                 to='/breifcase'>Личный кабинет</NavLink>
@@ -40,6 +42,7 @@ const Header = () => {
                     <button onClick={() => handleLogout()} className="btn btn-primary me-md-6 quit-btn" type="button">Выйти</button>
                 </div> : null}
         </nav>
+        </>
     )
 }
 
