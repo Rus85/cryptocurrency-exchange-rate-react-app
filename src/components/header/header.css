@@ -1,8 +1,10 @@
-.quit-btn {
-    margin: 0 50px 0 0;
+header {
+    position: relative;
 }
 
-.nav-link {
-    font-size: 20px;
+nav {
+    height: 60px;
+    width: 100%;
+    background: #212529;
 }
 

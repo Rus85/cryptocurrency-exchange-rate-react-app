@@ -25,3 +25,9 @@
         max-width: 600px;
     }
 }
+
+@media (max-width: 479px) {
+    .container {
+        max-width: 350px;
+    }
+}

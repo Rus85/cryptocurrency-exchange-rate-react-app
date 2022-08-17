@@ -5,15 +5,15 @@
 }
 
 .app {
-    background: url('/src/assets/main_background.jpg');
-    background-size: cover;
-    background-position: center center;
-    margin: 0 auto;
+    background: url('/src/assets/main_background.jpg') center center/cover no-repeat;
+    /* background-size: cover; */
+    /* background-position: center center; */
+    /* margin: 0 auto; */
     height: 100vh;
     overflow-y: scroll;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .app {
         background: url('/src/assets/main_background.jpg');
         background-size: cover;
@@ -37,4 +37,13 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
 }
+
+@media (max-width: 479px) {
+    .app {
+        background: url('/src/assets/main_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */

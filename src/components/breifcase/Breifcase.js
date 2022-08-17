@@ -11,6 +11,9 @@ import Spinner from '../spinner/Spinner'
 import { CURRENT_EXCHANGE_COINS_RATE } from '../../urlConsts/urlConsts'
 import './breifcase.css'
 import { motion } from 'framer-motion'
+import bitcoinIcon from '../../assets/bitcoinIcon.png'
+import ethereumIcon from '../../assets/ethereumIcon.png'
+import dollarIcon from '../../assets/dollarIcon.png'
 
 
 const Breifcase = () => {
@@ -25,7 +28,7 @@ const Breifcase = () => {
         if (isAuth) {
             navigate('/breifcase')
         } else {
-            navigate('/signin')
+            navigate('/signup')
         }
 
     }, [isAuth, navigate])
@@ -65,14 +68,14 @@ const Breifcase = () => {
                 <h2>Текущий баланс криптовалют</h2>
                 <div className='breifcase-coins-block'>
                     <div className="btc-block">
-                        <h2>BTC</h2>
+                        <h2>BTC <img className='coins-icons' src={bitcoinIcon} alt="" /></h2>
                         <div className="coin-block">
                             <div className="coin-counter">{bitState}</div>
                             <Input inputCallBack={bitCallback} />
                         </div>
                     </div>
                     <div className="eth-block">
-                        <h2>ETH</h2>
+                        <h2>ETH <img className='coins-icons' src={ethereumIcon} alt="" /></h2>
                         <div className="coin-block">
                             <div className="coin-counter">{ethState}</div>
                             <Input inputCallBack={ethCallback} />
@@ -80,7 +83,7 @@ const Breifcase = () => {
                     </div>
                 </div>
                 <div className="breifcase-sum">
-                    <h2>Баланс криптовалют в USD</h2>
+                    <h2>Баланс криптовалют в <img className='usd-icon' src={dollarIcon} alt="" /></h2>
                     <div className="breifcase-sum-block">
                         <div className="breifcase-sum-counter">{new Intl.NumberFormat('ru-RU').format(sum.toFixed())} $</div>
                     </div>

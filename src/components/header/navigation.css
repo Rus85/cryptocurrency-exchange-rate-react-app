@@ -1,0 +1,35 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.menu_item_link {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.menu_item_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: width .3s;
+}
+
+.menu_item_link:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .desktop-container {
+        display: none;
+    }
+
+}

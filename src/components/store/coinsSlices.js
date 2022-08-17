@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    bitState: 5,
-    ethState: 10
+    bitState: 0,
+    ethState: 0
 }
 
 const coinsInputsSlice = createSlice({

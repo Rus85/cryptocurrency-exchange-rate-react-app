@@ -44,7 +44,8 @@ const Chart = ({ data }) => {
     const colorCode = '#fff'
   
     const options = {
-        responsive: true,
+        // responsive: true,
+        maintainAspectRatio : false,
         plugins: {
             legend: {
                 position: 'top',
