@@ -1,5 +1,6 @@
     .form-block {
-        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
         background-color: #fff;
         width: 600px;
         margin: 50px auto;

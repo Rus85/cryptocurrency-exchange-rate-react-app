@@ -2,7 +2,7 @@
   background-color: #212529;
   padding: 30px;
   border-radius: 5px;
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   color: #fff;
   margin: 50px auto;
   max-width: 1000px;
@@ -76,6 +76,10 @@
 
 .usd-icon {
   width: 30px;
+}
+
+.coins-icons {
+  margin-bottom: 4px;
 }
 
 
@@ -176,7 +180,7 @@
   }
 
   .breifcase-block h2 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .coin-counter {

@@ -7,3 +7,14 @@
 .inputBtn {
     margin-left: 20px;
 }
+
+::placeholder {
+    font-size: 1em;
+  }
+
+  @media (max-width: 479px) {
+    ::placeholder {
+        font-size: 0.9em;
+      }
+  }
+  

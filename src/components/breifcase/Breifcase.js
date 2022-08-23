@@ -68,14 +68,14 @@ const Breifcase = () => {
                 <h2>Текущий баланс криптовалют</h2>
                 <div className='breifcase-coins-block'>
                     <div className="btc-block">
-                        <h2>BTC <img className='coins-icons' src={bitcoinIcon} alt="" /></h2>
+                        <h3>BTC <img className='coins-icons' src={bitcoinIcon} alt="" /></h3>
                         <div className="coin-block">
                             <div className="coin-counter">{bitState}</div>
                             <Input inputCallBack={bitCallback} />
                         </div>
                     </div>
                     <div className="eth-block">
-                        <h2>ETH <img className='coins-icons' src={ethereumIcon} alt="" /></h2>
+                        <h3>ETH <img className='coins-icons' src={ethereumIcon} alt="" /></h3>
                         <div className="coin-block">
                             <div className="coin-counter">{ethState}</div>
                             <Input inputCallBack={ethCallback} />

@@ -30,13 +30,14 @@ const СurrentExchangeRate = () => {
     return (
         <div className='current-exchange'>
             <div>
-            <h1>Текущий курс криптовалют</h1>
+            <h2>Текущий курс криптовалют</h2>
             </div>
             <div className='coin-boxes'>
                 {
                     keys.map(({ title, key, icon }) => (
                         <div className='coin-item' key={key}>
                             <div className='coin-item-blocks'>
+                            
                             <div>
                             <h3>{title}</h3>
                             </div>
@@ -44,6 +45,7 @@ const СurrentExchangeRate = () => {
                             <img className='coins-icons' src={icon} alt="" />
                             </div>
                             </div>
+                            
                             <div className='counter'>{new Intl.NumberFormat('ru-RU').format(data[key].usd.toFixed())} $
                             </div>
                         </div>

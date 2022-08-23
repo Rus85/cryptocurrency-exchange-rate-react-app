@@ -1,49 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     /* padding: 0 calc(0px - (100vw - 100%)) 0 0; */
 }
 
 .app {
-    background: url('/src/assets/main_background.jpg') center center/cover no-repeat;
-    /* background-size: cover; */
-    /* background-position: center center; */
-    /* margin: 0 auto; */
     height: 100vh;
     overflow-y: scroll;
 }
-
-/* @media (max-width: 991px) {
-    .app {
-        background: url('/src/assets/main_background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-}
-
-@media (max-width: 767px) {
-    .app {
-        background: url('/src/assets/main_background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-}
-
-@media (max-width: 575px) {
-    .app {
-        background: url('/src/assets/main_background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-}
-
-@media (max-width: 479px) {
-    .app {
-        background: url('/src/assets/main_background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-} */
